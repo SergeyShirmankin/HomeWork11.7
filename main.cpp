@@ -6,12 +6,14 @@
 #include <chrono> // для получения времени
 #include "Functions.h"
 #include "CopyFilesr.h"
+#include "NumericSoft.h"
 using namespace std;
 
 int main()
 {
-	string filename = "filename.txt";
-	string filenameNow = "sort";
+	string filename = "filename.txt";//исходный файл для сортировки
+	string filenameNow = "sort";//выходные  файлы для карманной сортировки 10 шт: sort1.txt..
+	string fileNumer = "number";//выходные файлы после разрядной сортировки.
 	const int size = 2000;
 	const int cycle = 10000;
 	int* rand_arr = new int[size];
@@ -43,8 +45,11 @@ int main()
 	write_sortFile(filenameNow, rand_arr, size, 1);
 	write_sortFile(filenameNow, rand_arr, size, 0);
 	//----------------------------------------------------------------
-	copyFiles("file3.txt", "file2.txt", "file1.txt");
+	//copyFiles("file3.txt", "file2.txt", "file1.txt");
 	//----------------------------------------------------------------
+	 write_sortNumeric("sort0.txt", fileNumer, 1);
+	 write_sortNumeric("sort0.txt", fileNumer, 0);
+	//-----------------------------------------------------------------
 	auto finish = chrono::high_resolution_clock::now(); // сохраняем время конца работы алгоритма
 	chrono::duration<double> elapsed = finish - start;
 	cout << "Elapsed time: " << elapsed.count() << " sec" << endl;
