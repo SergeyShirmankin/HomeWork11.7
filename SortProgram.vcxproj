@@ -123,11 +123,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CopyFiles.cpp" />
     <ClCompile Include="Functions.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="NumericSort.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CopyFilesr.h" />
     <ClInclude Include="Functions.h" />
+    <ClInclude Include="NumericSoft.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

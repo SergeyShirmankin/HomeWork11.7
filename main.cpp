@@ -5,6 +5,7 @@
 #include <ctime>
 #include <chrono> // для получения времени
 #include "Functions.h"
+#include "CopyFilesr.h"
 using namespace std;
 
 int main()
@@ -41,6 +42,8 @@ int main()
 	//----------------------------------------------------------------
 	write_sortFile(filenameNow, rand_arr, size, 1);
 	write_sortFile(filenameNow, rand_arr, size, 0);
+	//----------------------------------------------------------------
+	copyFiles("file3.txt", "file2.txt", "file1.txt");
 	//----------------------------------------------------------------
 	auto finish = chrono::high_resolution_clock::now(); // сохраняем время конца работы алгоритма
 	chrono::duration<double> elapsed = finish - start;
