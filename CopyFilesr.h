@@ -1,6 +1,6 @@
 #pragma once
 void copyFiles(const string& inFilename1, const string& inFilename2, const string& outFilename);
-void copy_10_Files(
+void copy_10_Files(const string& inFilename0,
 	const string& inFilename1,
 	const string& inFilename2,
 	const string& inFilename3,
@@ -10,4 +10,5 @@ void copy_10_Files(
 	const string& inFilename7,
 	const string& inFilename8,
 	const string& inFilename9,
-	const string& outFilename);
+	const string& outFilename,
+	int mode);

@@ -33,7 +33,7 @@ void copyFiles(const string& inFilename1, const string& inFilename2, const strin
 	}
 }
 //êîïèğîâàíèå 10 ôàéëîâ â îäèí ôàéë
-void copy_10_Files(
+void copy_10_Files(const string& inFilename0,
 	               const string& inFilename1,
                    const string& inFilename2,
 	               const string& inFilename3,
@@ -43,7 +43,8 @@ void copy_10_Files(
 	               const string& inFilename7,
 	               const string& inFilename8,
 	               const string& inFilename9,
-				   const string& outFilename) 
+				   const string& outFilename,
+	               int mode ) 
 {
 	{
 		ifstream in0;
@@ -63,7 +64,7 @@ void copy_10_Files(
 		int  str4, str5;
 		int  str6, str7;
 		int  str8, str9;
-
+		in0.open(inFilename0, fstream::in);
 		in1.open(inFilename1, fstream::in);
 		in2.open(inFilename2, fstream::in);
 		in3.open(inFilename3, fstream::in);
@@ -76,12 +77,19 @@ void copy_10_Files(
 		
 		out.open(outFilename, fstream::out);
 		if (out.is_open()) {
-			if (in1.is_open() &&
+			if (in0.is_open() && in1.is_open() &&
 				in2.is_open() && in3.is_open() &&
 				in4.is_open() && in5.is_open() &&
 				in6.is_open() && in7.is_open() &&
 				in8.is_open() && in9.is_open()) // ïğîâåğÿåì, ÷òî ôàéë óñïåøíî îòêğûò
 			{
+				if (mode == 1) {
+					while (!in0.eof())
+					{
+						in1 >> str1;
+						out << str1 << " ";
+					}
+				}
 				while (!in1.eof())
 				{
 					in1 >> str1;
@@ -127,6 +135,7 @@ void copy_10_Files(
 					in9 >> str9;
 					out << str9 << " ";
 				}
+				in0.close(); // çàêğûâàåì ôàéë
 				in1.close(); // çàêğûâàåì ôàéë
 				in2.close(); // çàêğûâàåì ôàéë
 				in3.close(); // çàêğûâàåì ôàéë
