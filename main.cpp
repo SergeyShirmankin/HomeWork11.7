@@ -7,6 +7,7 @@
 #include "Functions.h"
 #include "CopyFilesr.h"
 #include "NumericSoft.h"
+#include "RunCopy.h"
 using namespace std;
 
 int main()
@@ -44,12 +45,9 @@ int main()
 	//----------------------------------------------------------------
 	write_sortFile(filenameNow, rand_arr, size, 1);
 	write_sortFile(filenameNow, rand_arr, size, 0);
-	//----------------------------------------------------------------
-	//copyFiles("file3.txt", "file2.txt", "file1.txt");
-	//----------------------------------------------------------------
-	 write_sortNumeric("sort0.txt", fileNumer, 1);
-	 write_sortNumeric("sort0.txt", fileNumer, 0);
 	//-----------------------------------------------------------------
+	RunCopy();
+	//----------------------------------------------------------------
 	auto finish = chrono::high_resolution_clock::now(); // сохраняем время конца работы алгоритма
 	chrono::duration<double> elapsed = finish - start;
 	cout << "Elapsed time: " << elapsed.count() << " sec" << endl;

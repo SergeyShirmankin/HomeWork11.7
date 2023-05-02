@@ -32,3 +32,112 @@ void copyFiles(const string& inFilename1, const string& inFilename2, const strin
 		}
 	}
 }
+//êîïèğîâàíèå 10 ôàéëîâ â îäèí ôàéë
+void copy_10_Files(
+	               const string& inFilename1,
+                   const string& inFilename2,
+	               const string& inFilename3,
+	               const string& inFilename4,
+	               const string& inFilename5,
+	               const string& inFilename6,
+	               const string& inFilename7,
+	               const string& inFilename8,
+	               const string& inFilename9,
+				   const string& outFilename) 
+{
+	{
+		ifstream in0;
+		ifstream in1;
+		ifstream in2;
+		ifstream in3;
+		ifstream in4;
+		ifstream in5;
+		ifstream in6;
+		ifstream in7;
+		ifstream in8;
+		ifstream in9;
+		ofstream out;
+
+		int  str0, str1;
+		int  str2, str3;
+		int  str4, str5;
+		int  str6, str7;
+		int  str8, str9;
+
+		in1.open(inFilename1, fstream::in);
+		in2.open(inFilename2, fstream::in);
+		in3.open(inFilename3, fstream::in);
+		in4.open(inFilename4, fstream::in);
+		in5.open(inFilename5, fstream::in);
+		in6.open(inFilename6, fstream::in);
+		in7.open(inFilename7, fstream::in);
+		in8.open(inFilename8, fstream::in);
+		in9.open(inFilename9, fstream::in);
+		
+		out.open(outFilename, fstream::out);
+		if (out.is_open()) {
+			if (in1.is_open() &&
+				in2.is_open() && in3.is_open() &&
+				in4.is_open() && in5.is_open() &&
+				in6.is_open() && in7.is_open() &&
+				in8.is_open() && in9.is_open()) // ïğîâåğÿåì, ÷òî ôàéë óñïåøíî îòêğûò
+			{
+				while (!in1.eof())
+				{
+					in1 >> str1;
+					out << str1 << " ";
+				}
+				while (!in2.eof())
+				{
+					in2 >> str2;
+					out << str2 << " ";
+				}
+				while (!in3.eof())
+				{
+					in3 >> str3;
+					out << str3 << " ";
+				}
+				while (!in4.eof())
+				{
+					in4 >> str4;
+					out << str4 << " ";
+				}
+				while (!in5.eof())
+				{
+					in5 >> str5;
+					out << str5 << " ";
+				}
+				while (!in6.eof())
+				{
+					in6 >> str0;
+					out << str0 << " ";
+				}
+				while (!in7.eof())
+				{
+					in7 >> str7;
+					out << str7 << " ";
+				}
+				while (!in8.eof())
+				{
+					in8 >> str8;
+					out << str8 << " ";
+				}
+				while (!in9.eof())
+				{
+					in9 >> str9;
+					out << str9 << " ";
+				}
+				in1.close(); // çàêğûâàåì ôàéë
+				in2.close(); // çàêğûâàåì ôàéë
+				in3.close(); // çàêğûâàåì ôàéë
+				in4.close(); // çàêğûâàåì ôàéë
+				in5.close(); // çàêğûâàåì ôàéë
+				in6.close(); // çàêğûâàåì ôàéë
+				in7.close(); // çàêğûâàåì ôàéë
+				in8.close(); // çàêğûâàåì ôàéë
+				in9.close(); // çàêğûâàåì ôàéë
+				out.close(); // çàêğûâàåì ôàéë
+			}
+		}
+	}
+}
