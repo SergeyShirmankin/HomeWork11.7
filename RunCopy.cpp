@@ -22,7 +22,7 @@ void RunCopy()
 	copy_10_Files("number0.txt", "number1.txt", "number2.txt",// сливаем файлы
 		"number3.txt", "number4.txt", "number5.txt",
 		"number6.txt", "number7.txt", "number8.txt",
-		"number9.txt", "outNumber1.txt",0);
+		"number9.txt", "outNumber1.txt",1);
 //=========================02========================================
 	write_sortNumeric("sort2.txt", fileNumer, 1);//создаем файлы
 	write_sortNumeric("sort2.txt", fileNumer, 0);//сортируем по файлам
@@ -30,7 +30,7 @@ void RunCopy()
 	copy_10_Files("number0.txt", "number1.txt", "number2.txt",// сливаем файлы
 		"number3.txt", "number4.txt", "number5.txt",
 		"number6.txt", "number7.txt", "number8.txt",
-		"number9.txt", "outNumber2.txt",0);
+		"number9.txt", "outNumber2.txt",1);
 //==========================03=======================================
 	write_sortNumeric("sort3.txt", fileNumer, 1);//создаем файлы
 	write_sortNumeric("sort3.txt", fileNumer, 0);//сортируем по файлам
@@ -38,7 +38,7 @@ void RunCopy()
 	copy_10_Files("number0.txt", "number1.txt", "number2.txt",// сливаем файлы
 		"number3.txt", "number4.txt", "number5.txt",
 		"number6.txt", "number7.txt", "number8.txt",
-		"number9.txt", "outNumber3.txt",0);
+		"number9.txt", "outNumber3.txt",1);
 //==========================04=======================================
 	write_sortNumeric("sort4.txt", fileNumer, 1);//создаем файлы
 	write_sortNumeric("sort4.txt", fileNumer, 0);//сортируем по файлам
@@ -46,7 +46,7 @@ void RunCopy()
 	copy_10_Files("number0.txt", "number1.txt", "number2.txt",// сливаем файлы
 		"number3.txt", "number4.txt", "number5.txt",
 		"number6.txt", "number7.txt", "number8.txt",
-		"number9.txt", "outNumber4.txt",0);
+		"number9.txt", "outNumber4.txt",1);
 //==========================05=======================================
 	write_sortNumeric("sort5.txt", fileNumer, 1);//создаем файлы
 	write_sortNumeric("sort5.txt", fileNumer, 0);//сортируем по файлам
@@ -54,7 +54,7 @@ void RunCopy()
 	copy_10_Files("number0.txt", "number1.txt", "number2.txt",// сливаем файлы
 		"number3.txt", "number4.txt", "number5.txt",
 		"number6.txt", "number7.txt", "number8.txt",
-		"number9.txt", "outNumber5.txt",0);
+		"number9.txt", "outNumber5.txt",1);
 //==========================06=======================================
 	write_sortNumeric("sort6.txt", fileNumer, 1);//создаем файлы
 	write_sortNumeric("sort6.txt", fileNumer, 0);//сортируем по файлам
@@ -70,7 +70,7 @@ void RunCopy()
 	copy_10_Files("number0.txt", "number1.txt", "number2.txt",// сливаем файлы
 		"number3.txt", "number4.txt", "number5.txt",
 		"number6.txt", "number7.txt", "number8.txt",
-		"number9.txt", "outNumber7.txt",0);
+		"number9.txt", "outNumber7.txt",1);
 //==========================08=======================================
 	write_sortNumeric("sort7.txt", fileNumer, 1);//создаем файлы
 	write_sortNumeric("sort7.txt", fileNumer, 0);//сортируем по файлам
@@ -86,5 +86,5 @@ void RunCopy()
 	copy_10_Files("number0.txt", "number1.txt", "number2.txt",// сливаем файлы
 		"number3.txt", "number4.txt", "number5.txt",
 		"number6.txt", "number7.txt", "number8.txt",
-		"number9.txt", "outNumber9.txt",0);
+		"number9.txt", "outNumber9.txt",1);
 }

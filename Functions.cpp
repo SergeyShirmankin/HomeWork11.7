@@ -82,7 +82,7 @@ void write_sortFile(const string & filename, const int* arr, const int n, int mo
 		// Cортируем массив, Открывакм файлы для добавления данных
 		for (int i = 0; i < n; i++)
 		{
-			if (arr[i] < 10 && 0 <= arr[i]) {// 0..9
+			if (arr[i] < 10 && 0 < arr[i]) {// 1..9
 				newFileName = filename + to_string(0) + ".txt";
 				newFs.open(newFileName, fstream::app);
 				if (newFs.is_open()) // проверяем, что файл успешно открыт
@@ -93,8 +93,8 @@ void write_sortFile(const string & filename, const int* arr, const int n, int mo
 				else
 					cout << "\n File " << newFileName << " not  open";
 			}
-			//------------------------11..19--------------------------------------------
-			else if (arr[i] < 20 && 10 < arr[i])
+			//------------------------10..19--------------------------------------------
+			else if (arr[i] < 20 && 10 <= arr[i])
 			{
 				newFileName = filename + to_string(1) + ".txt";
 				newFs.open(newFileName, fstream::app);
@@ -106,8 +106,8 @@ void write_sortFile(const string & filename, const int* arr, const int n, int mo
 				else
 					cout << "\n File " << newFileName << " not  open";
 			}
-			//------------------------21..29--------------------------------------------
-			else if (arr[i] < 30 && 20 < arr[i])
+			//------------------------20..29--------------------------------------------
+			else if (arr[i] < 30 && 20 <= arr[i])
 			{
 				newFileName = filename + to_string(2) + ".txt";
 				newFs.open(newFileName, fstream::app);
@@ -119,8 +119,8 @@ void write_sortFile(const string & filename, const int* arr, const int n, int mo
 				else
 					cout << "\n File " << newFileName << " not  open";
 			}
-			//------------------------31..39--------------------------------------------
-			else if (arr[i] < 40 && 30 < arr[i])
+			//------------------------30..39--------------------------------------------
+			else if (arr[i] < 40 && 30 <= arr[i])
 			{
 				newFileName = filename + to_string(3) + ".txt";
 				newFs.open(newFileName, fstream::app);
@@ -133,8 +133,8 @@ void write_sortFile(const string & filename, const int* arr, const int n, int mo
 					cout << "\n File " << newFileName << " not  open";
 			}
 
-			//------------------------41..49--------------------------------------------
-			else if (arr[i] < 50 && 40 < arr[i])
+			//------------------------40..49--------------------------------------------
+			else if (arr[i] < 50 && 40 <= arr[i])
 			{
 				newFileName = filename + to_string(4) + ".txt";
 				newFs.open(newFileName, fstream::app);
@@ -146,8 +146,8 @@ void write_sortFile(const string & filename, const int* arr, const int n, int mo
 				else
 					cout << "\n File " << newFileName << " not  open";
 			}
-			//------------------------51..59--------------------------------------------
-			else if (arr[i] < 60 && 50 < arr[i])
+			//------------------------50..59--------------------------------------------
+			else if (arr[i] < 60 && 50 <= arr[i])
 			{
 				newFileName = filename + to_string(5) + ".txt";
 				newFs.open(newFileName, fstream::app);
@@ -159,8 +159,8 @@ void write_sortFile(const string & filename, const int* arr, const int n, int mo
 				else
 					cout << "\n File " << newFileName << " not  open";
 			}
-			//------------------------61..69--------------------------------------------
-			else if (arr[i] < 70 && 60 < arr[i])
+			//------------------------60..69--------------------------------------------
+			else if (arr[i] < 70 && 60 <= arr[i])
 			{
 				newFileName = filename + to_string(6) + ".txt";
 				newFs.open(newFileName, fstream::app);
@@ -172,8 +172,8 @@ void write_sortFile(const string & filename, const int* arr, const int n, int mo
 				else
 					cout << "\n File " << newFileName << " not  open";
 			}
-			//------------------------71..79--------------------------------------------
-			else if (arr[i] < 80 && 70 < arr[i])
+			//------------------------70..79--------------------------------------------
+			else if (arr[i] < 80 && 70 <= arr[i])
 			{
 				newFileName = filename + to_string(7) + ".txt";
 				newFs.open(newFileName, fstream::app);
@@ -185,8 +185,8 @@ void write_sortFile(const string & filename, const int* arr, const int n, int mo
 				else
 					cout << "\n File " << newFileName << " not  open";
 			}
-			//------------------------81..89--------------------------------------------
-			else if (arr[i] < 90 && 80 < arr[i])
+			//------------------------80..89--------------------------------------------
+			else if (arr[i] < 90 && 80 <= arr[i])
 			{
 				newFileName = filename + to_string(8) + ".txt";
 				newFs.open(newFileName, fstream::app);
@@ -198,8 +198,8 @@ void write_sortFile(const string & filename, const int* arr, const int n, int mo
 				else
 					cout << "\n File " << newFileName << " not  open";
 			}
-			//------------------------91..100--------------------------------------------
-			else if (arr[i] <= 100 && 90 < arr[i])
+			//------------------------90..99--------------------------------------------
+			else if (arr[i] < 100 && 90 <= arr[i])
 			{
 				newFileName = filename + to_string(9) + ".txt";
 				newFs.open(newFileName, fstream::app);

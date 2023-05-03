@@ -51,7 +51,7 @@ void write_sortNumeric(const string& inFilename1, const string& filename, int mo
 			while (!in1.eof())
 			{
 				in1 >> str;
-				if (convertDigit(str) == 0) {// 0..9
+				if (convertDigit(str) == 0) {// 0
 					newFileName = filename + to_string(0) + ".txt";
 					newFs.open(newFileName, fstream::app);
 					if (newFs.is_open()) // проверяем, что файл успешно открыт

@@ -86,8 +86,8 @@ void copy_10_Files(const string& inFilename0,
 				if (mode == 1) {
 					while (!in0.eof())
 					{
-						in1 >> str1;
-						out << str1 << " ";
+						in0 >> str0;
+						out << str0 << " ";
 					}
 				}
 				while (!in1.eof())
